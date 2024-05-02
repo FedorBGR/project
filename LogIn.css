@@ -1,0 +1,182 @@
+body{margin: 0;
+padding: 0;
+height: 100%;}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    width: fit-content;
+    box-sizing: border-box;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 20px;
+  }
+  
+.VGTUlogo, .logo
+{
+    display:flex;
+    margin-left: 15%;
+    width: 85px;
+}
+
+.headertext{
+    position: relative;
+    overflow-wrap: break-word;
+    font-family: 'Montserrat';
+    font-weight: bold;
+    font-size: 26px;
+    letter-spacing: 0.8px;
+    color: #051C2C;
+    text-decoration: none;
+    margin-left: 10%;
+    margin-top: 3%;
+  }
+
+  ul{margin: 0;}
+
+  .nav-links {
+    list-style: none;
+    background: #051C2C;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 1fr;
+    box-sizing: border-box;
+    font-size: 26px;
+  }
+  
+  .soisksteli
+  {
+    color: #ffffff;
+    font-family: 'Montserrat';
+    text-decoration: none;
+  }
+  .soisksteli:hover{
+    font-weight: 500;
+  }
+
+  .rabotodateli
+  {
+    color: #ffffff;
+    font-family: 'Montserrat';
+    text-decoration: none;
+  }
+  .rabotodateli:hover
+  {
+    font-weight: 500;
+  }
+
+  .help
+  {
+    color: #ffffff;
+    font-family: 'Montserrat';
+    text-decoration: none;
+  }
+  .help:hover
+  {
+    font-weight: 500;
+  }
+
+  .login
+  {
+    color: #ffffff;
+    font-family: 'Montserrat';
+    text-decoration: none;
+  }
+  .login:hover
+  {
+    font-weight: 500; 
+  }
+
+  .palka
+  {
+    margin-left: 14.5%;
+    color:#B9975B;
+    text-decoration: none;
+    font-family: 'Montserrat';
+    font-weight: 200;
+    font-size: 600%;
+    cursor:default;
+  }
+
+ .nav-links .menuline{
+  width: 2px;
+    height: 35px;
+    background-color: #B99F6E;
+ }
+
+ .login-container {
+    font-family: 'Montserrat';
+    margin: 0%;
+    padding: 0%;
+    margin-top: 0vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #051c2cef;
+    font-family: 'Monserrat';
+    height:85vh;
+  }
+  
+  .login-box {
+    font-family: 'Montserrat';
+    display: flex;
+    flex-direction: column; /* Располагаем элементы в столбец */
+    justify-content: center; /* Выравниваем элементы по вертикали */
+    align-items: center;
+    width: 60%;
+    background-color: #f1f1f1;
+    border-radius: 25px;
+    padding: 30px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);}
+  
+  .logoLogIn {
+    text-align: center;
+    position: relative;
+    margin-bottom: 7%;
+  }
+  
+  input[type="text"],
+  input[type="password"],
+  button {
+    font-size: 31px;
+    width: 80%;
+    padding: 15px;
+    margin-bottom: 3%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  button {
+    background-color: #C0C6C9;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s;
+    color:rgba(5, 28, 44, 0.7);
+    width: 60%;
+  }
+  input[type="text"],
+  input[type="password"]{
+    background-color: rgba(185, 151, 91, 0.44);
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  .options {
+    color:#051C2C94;
+    text-align: center;
+    font-size: 26px;
+  }
+  
+  .options a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .options a:hover {
+    text-decoration: underline;
+  }

@@ -1,0 +1,161 @@
+body{padding: 0;
+    margin: 0;}
+    .header {
+        display: flex;
+        flex-direction: row;
+        align-self: center;
+        width: fit-content;
+        box-sizing: border-box;
+        flex-direction: row;
+        justify-content: space-around;
+        margin-bottom: 20px;
+      }
+      
+    .VGTUlogo, .logo
+    {
+        display:flex;
+        margin-left: 15%;
+        width: 85px;
+    }
+    
+    .headertext{
+        position: relative;
+        overflow-wrap: break-word;
+        font-family: 'Montserrat';
+        font-weight: bold;
+        font-size: 26px;
+        letter-spacing: 0.8px;
+        color: #051C2C;
+        text-decoration: none;
+        margin-left: 10%;
+        margin-top: 3%;
+      }
+    
+      .nav-links {
+        list-style: none;
+        background: #051C2C;
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 1fr;
+        box-sizing: border-box;
+        font-size: 26px;
+      }
+      
+      .soisksteli
+      {
+        color: #ffffff;
+        font-family: 'Montserrat';
+        text-decoration: none;
+      }
+      .soisksteli:hover{
+        font-weight: 500;
+      }
+    
+      .rabotodateli
+      {
+        color: #ffffff;
+        font-family: 'Montserrat';
+        text-decoration: none;
+      }
+      .rabotodateli:hover
+      {
+        font-weight: 500;
+      }
+    
+      .help
+      {
+        color: #ffffff;
+        font-family: 'Montserrat';
+        text-decoration: none;
+      }
+      .help:hover
+      {
+        font-weight: 500;
+      }
+    
+      .login
+      {
+        color: #ffffff;
+        font-family: 'Montserrat';
+        text-decoration: none;
+      }
+      .login:hover
+      {
+        font-weight: 500; 
+      }
+    
+      .palka
+      {
+        margin-left: 14.5%;
+        color:#B9975B;
+        text-decoration: none;
+        font-family: 'Montserrat';
+        font-weight: 200;
+        font-size: 600%;
+        cursor:default;
+      }
+    
+     .nav-links .menuline{
+      width: 2px;
+        height: 35px;
+        background-color: #B99F6E;
+     }
+
+     .resume {
+        position: relative;
+        font-family: 'Montserrat';
+        margin: 20px;
+        align-items: center;
+        justify-content: center;
+    }
+    .profile {
+        font-size: 25px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 10%;
+        margin-bottom: 20px;
+    }
+    .profile img {
+        width: 340px;
+        margin-right: 10%;
+    }
+    .section {
+        align-items: center;
+        padding: 10px;
+        margin-bottom: 20px;
+    }
+    .section-title {
+        height: 30px;
+        border-radius: 10px;
+        background-color: rgba(185, 151, 91, 0.44);
+        font-size: 24px;
+        text-align: center;
+        font-weight: 500;
+        margin-bottom: 10px;
+
+    }
+    .section-content {
+        padding: 10px;
+    }
+    .skills ul {
+        list-style-type: none;
+        padding-left: 0;
+    }
+    .portfolio {
+        display: flex;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+    }
+    .portfolio-item {
+        flex: 0 0 auto;
+        width: 200px;
+        height: 150px;
+        margin-right: 10px;
+        scroll-snap-align: start;
+    }
+    .about-me {
+        text-align: center;
+    }
