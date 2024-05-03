@@ -118,6 +118,9 @@ body{padding: 0;
         margin-left: 10%;
         margin-bottom: 20px;
     }
+    .profile .name {
+      color:#B9975B;
+    }
     .profile img {
         width: 340px;
         margin-right: 10%;
@@ -128,17 +131,29 @@ body{padding: 0;
         margin-bottom: 20px;
     }
     .section-title {
-        height: 30px;
+      padding-top: 10px;
+        height: 50px;
         border-radius: 10px;
         background-color: rgba(185, 151, 91, 0.44);
-        font-size: 24px;
+        font-size: 30px;
         text-align: center;
         font-weight: 500;
         margin-bottom: 10px;
 
     }
-    .section-content {
+    .section-content , .section-content-education{
+      margin-top: 30px;
         padding: 10px;
+        font-size: 25px;
+        align-items: center;
+        justify-content: center;
+        margin-left: 10%;
+        margin-bottom: 15px;
+    }
+    .section-content-education{
+      column-count: 2;
+      justify-content: center;
+      padding: 10px 10px 10px 10px;
     }
     .skills ul {
         list-style-type: none;
@@ -158,4 +173,5 @@ body{padding: 0;
     }
     .about-me {
         text-align: center;
+        justify-content: center;
     }
