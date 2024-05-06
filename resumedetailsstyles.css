@@ -106,7 +106,7 @@ body{padding: 0;
      .resume {
         position: relative;
         font-family: 'Montserrat';
-        margin: 20px;
+        margin: 10px;
         align-items: center;
         justify-content: center;
     }
@@ -141,36 +141,129 @@ body{padding: 0;
         margin-bottom: 10px;
 
     }
-    .section-content , .section-content-education{
+    .section-content {
       margin-top: 30px;
         padding: 10px;
-        font-size: 25px;
+        font-size: 40px;
         align-items: center;
         justify-content: center;
-        margin-left: 10%;
         margin-bottom: 15px;
+        position: relative;
+        display: flex;
+        align-items: center;
+        background-color: #fff;
     }
     .section-content-education{
+      margin-left: 250px;
       column-count: 2;
       justify-content: center;
       padding: 10px 10px 10px 10px;
+      font-size: 40px;
     }
+    .year {font-size: 50px;
+    margin-top: 100px;}
     .skills ul {
         list-style-type: none;
         padding-left: 0;
     }
     .portfolio {
-        display: flex;
-        overflow-x: auto;
-        scroll-snap-type: x mandatory;
-    }
-    .portfolio-item {
-        flex: 0 0 auto;
-        width: 200px;
-        height: 150px;
-        margin-right: 10px;
-        scroll-snap-align: start;
-    }
+      overflow-x: auto;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+      padding: 20px;
+      white-space: nowrap; /* Отмена переноса элементов на новую строку */
+  }
+  
+  .portfolio-items {
+    display: flex;
+    flex-wrap: nowrap; /* Запретить перенос элементов на новую строку */
+    overflow-x: hidden; /* Добавить горизонтальный скроллбар */
+    padding-bottom: 20px; /* Добавить немного отступа вниз, чтобы кнопки не налезали на последнюю фотографию */
+}
+
+.portfolio-item {
+    flex: 0 0 auto; /* Установить фиксированную ширину элемента */
+    width: 300px; /* Измените на вашу предпочтительную ширину */
+    height: auto; /* Добавьте эту строку, чтобы сохранить соотношение сторон */
+    margin-right: 10px; /* Добавьте отступ между элементами */
+}
+
+  
+  .portfolio-item img {
+      width: 100%;
+      height: auto;
+  }  
+  
+    /* CSS для модального окна */
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 9999;
+      padding-top: 0; /* Измените padding-top на 0, чтобы изображение начиналось с верха окна */
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: rgba(0,0,0,0.9); /* Измените прозрачность фона по вашему вкусу */
+  }
+  
+  .modal-content {
+    margin: auto;
+    display: block;
+    width: 100%; /* Установите ширину изображения на 100% */
+    height: 100%; /* Установите высоту изображения на 100% */
+    object-fit: contain; /* Заполните всю доступную область, сохраняя пропорции */
+}
+  
+  .close {
+      position: absolute;
+      top: 15px;
+      right: 35px;
+      color: #f1f1f1;
+      font-size: 40px;
+      font-weight: bold;
+      transition: 0.3s;
+  }
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* CSS для кнопок листания */
+.prev, .next {
+  background-color: rgba(0, 0, 0, 0.6);
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: #B9975B;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  border: none;
+}
+
+.prev {
+  left: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: #051c2cee;;
+}
     .about-me {
         text-align: center;
         justify-content: center;
