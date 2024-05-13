@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Создание резюме</title>
+    <link rel="stylesheet" href="createresumestyles.css">
+</head>
+<body>
+    <header class="header">
+        <a class="VGTUlogo" href="#"> <img class="logo" src="img/vstu-logobezbukv.png" width="63" alt="Логотип ВГТУ"> </a>
+        <a class="palka">|</a>
+        <a href="#" class="headertext">ВОРОНЕЖСКИЙ ГОСУДАРСТВЕННЫЙ ТЕХНИЧЕСКИЙ УНИВЕРСИТЕТ</a>
+    </header>
+    
+    <nav>
+        <ul class="nav-links">
+            <div class="menuline"></div>
+            <li><a href="#" class="soisksteli">Соискатели</a></li>
+            <div class="menuline"></div>
+            <li><a href="#" class="rabotodateli">Работодатели</a></li>
+            <div class="menuline"></div>
+            <li><a href="#" class="help">Помощь</a></li>
+            <div class="menuline"></div>
+            <li><a href="LogIn.html" class="login">Вход и регистрация</a></li>
+            <div class="menuline"></div>
+         </ul>
+    </nav>
+
+    <div class="resume">
+        <div class="profile">
+            <img src="img/Default-Profile-Picture-Transparent-Image.png" width="340" alt="Фото">
+            <div class="profile-details">
+                <label for="fullname">ФИО:</label>
+                <input type="text" id="fullname" name="fullname">
+                <label for="gender">Пол:</label>
+                <select id="gender" name="gender">
+                    <option value="male">Мужской</option>
+                    <option value="female">Женский</option>
+                </select>
+                <label for="birthdate">Дата рождения:</label>
+                <input type="date" id="birthdate" name="birthdate">
+                
+                <label for="specialization">Специализация:</label>
+                <input type="text" id="specialization" name="specialization">
+                <label for="course">Курс:</label>
+                <select id="course-select">
+                    <option value="1">1 курс</option>
+                    <option value="2">2 курс</option>
+                    <option value="3">3 курс</option>
+                    <option value="4">4 курс</option>
+                    <option value="5">5 курс</option>
+                    <!-- Добавьте остальные курсы по мере необходимости -->
+                </select>
+            </div>
+        </div>
+        <div class="section">
+            <div class="section-title">Образование</div>
+            <div class="section-content-education">
+                <label for="education-year">Год:</label>
+                <input type="text" id="education-year" name="education-year">
+                <label for="faculty">Факультет:</label>
+                <input type="text" id="faculty" name="faculty">
+                <label for="department">Кафедра:</label>
+                <input type="text" id="department" name="department">
+            </div>
+        </div>
+        <div class="section">
+            <div class="section-title">Практика</div>
+            <div class="section-content practice-section" >
+                <label for="course-select">Курс:</label>
+                <select id="course-select">
+                    <option value="1">1 курс</option>
+                    <option value="2">2 курс</option>
+                    <option value="3">3 курс</option>
+                    <option value="4">4 курс</option>
+                    <option value="5">5 курс</option>
+                    <!-- Добавьте остальные курсы по мере необходимости -->
+                </select>
+                <label for="practice-info">Информация о практике:</label>
+                <textarea id="practice-info"></textarea>
+                <button onclick="addPractice()">Добавить практику</button>
+                <ul id="practice-list"></ul>
+            </div>
+        </div>
+        <div class="section skills">
+            <div class="section-title">Технические навыки</div>
+            <div class="section-content skills-section">
+                <label for="skill">Навык:</label>
+                <input type="text" id="skill" name="skill">
+                <button onclick="addSkill()">Добавить навык</button>
+                <ul id="skills-list"></ul>
+            </div>
+        </div>
+      <!-- Обновленная секция портфолио в HTML -->
+<div class="section">
+    <div class="section-title">Портфолио</div>
+    <div class="section-content portfolio portfolio-section">
+        <input type="file" id="portfolio-file" multiple>
+        <button onclick="uploadPortfolio()">Загрузить фотографии</button>
+        <div id="uploaded-photos" class="portfolio-items"></div>
+    </div>
+    <div id="modal" class="modal" onclick="closeModal()">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modal-img">
+    </div>
+</div>
+        <div class="section">
+            <div class="section-title">О себе</div>
+            <div class="section-content about-me">
+                <label class="about">Напишите о себе</label>
+                <textarea id="about-me" name="about-me" rows="5" cols="200"></textarea>
+            </div>
+        </div>
+    </div>
+    <script src="createresumefunc.js"></script>
+</body>
+</html>
