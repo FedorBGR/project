@@ -149,7 +149,9 @@ body{padding: 0;
 }
 
 .section {
+    width: 70%;
     margin-bottom: 20px;
+    margin-left: 15%;
 }
 
 .section-title {
@@ -201,6 +203,16 @@ flex-direction: column;
 font-size: 25px;
 width: 70%;
 }
+.section-content-education select
+{
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 70%;
+    margin-left: 15%;
+    margin-bottom: 10px;
+}
 
 .practice-section
 {
@@ -219,9 +231,9 @@ label
     display: flex;
     justify-content: center;
     flex-direction: column;
-    margin-left: 30%;
+    margin-left: 15%;
 }
-.practice-section label, textarea, button , .practice-section select
+.practice-section label, textarea, .practice-section select
 {
     font-size: 25px;
     display: flex;
@@ -235,7 +247,8 @@ label
     margin-bottom: 10px;
 }
 .practice-section button
-{margin-left: 72%;
+{margin-left: 67.5%;
+    margin-top: 30px;
     width: 220px;
     height: 82px;
     font-size: 25px;
@@ -273,7 +286,7 @@ label
     display: flex;
     justify-content: center;
     flex-direction: column;
-    margin-left: 30%;
+    margin-left: 15%;
 }
 .skills-section label
 {
@@ -294,7 +307,8 @@ label
     margin-left: 15%;
 }
 .skills-section button
-{margin-left: 72%;
+{margin-left: 67.5%;
+    margin-top: 30px;
     width: 220px;
     height: 82px;
     font-size: 25px;
@@ -337,7 +351,8 @@ label
 }
 
 .portfolio-section button
-{margin-left: 72%;
+{margin-left: 67.5%;
+    margin-top: 30px;
     width: 220px;
     height: 82px;
     font-size: 25px;
