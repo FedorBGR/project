@@ -103,99 +103,90 @@ body{padding: 0;
         background-color: #B99F6E;
      }
 
-.resume {
-    font-family: 'Montserrat';
-    margin: 0 auto;
-    max-width: 95%;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-.photo{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    margin-right: 30px;
-}
-.switch-photo
-{
-    margin-top: 40px;
-    text-decoration:underline;
-    cursor: pointer;
-    
-}
-.profile {
-    font-size: 25px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 20px;
-}
-
-.profile img {
-    width: 340px;
-}
-
-.profile-details {
-    
-    display: flex;
-    flex-direction: column;
-}
-
-.profile-details label {
-    margin-bottom: 5px;
-    font-weight: bold;
-}
-
-.profile-details input,
-.profile-details select,
-.profile-details textarea {
-    font-size: 25px;
-    width: 100%;
-    padding: 8px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-.section {
-    width: 70%;
-    margin-bottom: 20px;
-    margin-left: 15%;
-}
-
-.section-title {
-    padding-top: 10px;
-        height: 50px;
+     .vacation {
+        font-family: 'Montserrat';
+        margin: 0 auto;
+        max-width: 95%;
+        padding: 20px;
+        background-color: #fff;
         border-radius: 10px;
-        background-color: rgba(185, 151, 91, 0.44);
-        font-size: 30px;
-        text-align: center;
-        font-weight: 500;
-        margin-bottom: 10px;
-}
-
-.section-content {
-    font-size: 25px;
-    background-color: #fff;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .photo{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        margin-right: 30px;
+    }
+    .switch-photo
+    {
+        margin-top: 40px;
+        text-decoration:underline;
+        cursor: pointer;
+        
+    }
+    .profile {
+        font-size: 25px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
     
-}
-.section-content-education {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    font-size: 25px;
-    background-color: #fff;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-.section-content-education input
+    .profile img {
+        width: 340px;
+    }
+    
+    .profile-details {
+        
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .profile-details label {
+        margin-bottom: 5px;
+        font-weight: bold;
+    }
+    
+    .profile-details input,
+    .profile-details select,
+    .profile-details textarea {
+        font-size: 25px;
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+    
+    .section {
+        width: 70%;
+        margin-bottom: 20px;
+        margin-left: 15%;
+    }
+    
+    .section-title {
+        padding-top: 10px;
+            height: 50px;
+            border-radius: 10px;
+            background-color: rgba(185, 151, 91, 0.44);
+            font-size: 30px;
+            text-align: center;
+            font-weight: 500;
+            margin-bottom: 10px;
+    }
+    
+    .section-content {
+        font-size: 25px;
+        background-color: #fff;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        
+    }
+    
+.section-content input
 {
 margin-left: 15%;
 justify-content: center;
@@ -205,7 +196,7 @@ font-size: 25px;
 width: 70%;
 margin-bottom: 20px;
 }
-.section-content-education label
+.section-content label
 {
 font-weight: 600;
 margin-left: 15%;
@@ -214,76 +205,6 @@ display: flex;
 flex-direction: column;
 font-size: 25px;
 width: 70%;
-}
-.section-content-education select
-{
-    font-size: 25px;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    width: 70%;
-    margin-left: 15%;
-    margin-bottom: 10px;
-}
-
-.practice-section
-{
-    font-size: 25px;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-}
-label
-{
-    font-weight: 600;
-}
-#practice-list
-{
-    margin-bottom: 10px;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    margin-left: 15%;
-}
-.practice-section label, textarea, .practice-section select
-{
-    font-size: 25px;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    width: 70%;
-    margin-left: 15%;
-}
-.practice-section select, textarea
-{
-    margin-bottom: 10px;
-}
-.practice-section button
-{margin-left: 67.5%;
-    margin-top: 30px;
-    width: 220px;
-    height: 82px;
-    font-size: 25px;
-    font-family: 'Montserrat';
-    background-color: #051C2C;
-    color: #B9975B;
-    transition: 0.2s;
-    cursor: pointer;
-    outline: none;
-    font-weight: 400;
-    border-radius: 20px;
-}
-
-.practice-section button:focus{outline: none;}
-.practice-section button:hover {
-  font-family: 'Montserrat';
-  background-color: #051C2C;
-  transform:scale(105%);
-  font-weight: 500;
-}
-.practice-section button:active{
-  transform: scale(0.9);
-  background-color: rgba(5, 28, 44, 0.7);
 }
 
 .skills-section{
@@ -346,13 +267,30 @@ label
   background-color: rgba(5, 28, 44, 0.7);
 }
 
-.portfolio-section{
+.requirements-section{
     font-size: 25px;
     display: flex;
     justify-content: center;
     flex-direction: column;
 }
-.portfolio-section input{
+#requirements-list
+{
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 15%;
+}
+.requirements-section label
+{
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 70%;
+    margin-left: 15%;
+}
+.requirements-section input{
     margin-bottom: 10px;
     font-size: 25px;
     display: flex;
@@ -361,8 +299,7 @@ label
     width: 70%;
     margin-left: 15%;
 }
-
-.portfolio-section button
+.requirements-section button
 {margin-left: 67.5%;
     margin-top: 30px;
     width: 220px;
@@ -378,89 +315,53 @@ label
     border-radius: 20px;
 }
 
-.portfolio-section button:focus{outline: none;}
-.portfolio-section button:hover {
+.requirements-section button:focus{outline: none;}
+.requirements-section button:hover {
   font-family: 'Montserrat';
   background-color: #051C2C;
   transform:scale(105%);
   font-weight: 500;
 }
-.portfolio-section button:active{
+.requirements-section button:active{
   transform: scale(0.9);
   background-color: rgba(5, 28, 44, 0.7);
 }
 
-#uploaded-photos
-{
-    margin-left: 10%;
-}
-/* Обновленные стили для портфолио */
-.portfolio-items {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center; /* Центрируем элементы */
-}
-
-.portfolio-items img {
-    max-width: 100%;
-    height: auto;
-    margin: 10px;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-/* Стили для модального окна */
-.modal {
-    display: none; /* По умолчанию скрыто */
-    position: fixed; /* Фиксированное положение */
-    z-index: 1; /* На верхнем слое */
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto; /* Добавляем прокрутку, если содержимое слишком большое */
-    background-color: rgba(0,0,0,0.8); /* Черный цвет с прозрачностью */
-}
-
-.modal-content {
-    margin: auto; /* Центрируем содержимое */
-    display: block;
-    width: 80%;
-    max-width: 800px; /* Максимальная ширина */
-    max-height: 80%;
-}
-
-/* Стили для кнопки закрытия модального окна */
-.close {
-    color: #fff;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-    color: #ccc;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-
-
-.about-me{
+.about-company{
     flex-direction: column;
     display: flex;
     justify-content: center;
     font-size: 25px;
 }
-.about-me textarea {
+.about-company textarea {
     width: 100%;
     border: 1px solid #ccc;
     border-radius: 5px;
     width: 70%;
     margin-left: 15%;
 }
-.about-me label {
+.about-company label {
+    font-weight: 600;
+    width: 100%;
+    border-radius: 5px;
+    width: 70%;
+    margin-left: 15%;
+}
+
+.working-conditions{
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+}
+.working-conditions textarea {
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 70%;
+    margin-left: 15%;
+}
+.working-conditions label {
     font-weight: 600;
     width: 100%;
     border-radius: 5px;

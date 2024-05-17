@@ -29,7 +29,8 @@
 
     <div class="resume">
         <div class="profile">
-            <img src="img/Default-Profile-Picture-Transparent-Image.png" width="340" alt="Фото">
+            <div class="photo"><img src="img/Default-Profile-Picture-Transparent-Image.png" width="340" alt="Фото">
+            <a class="switch-photo">Изменить фото</a></div>
             <div class="profile-details">
                 <label for="fullname">ФИО:</label>
                 <input type="text" id="fullname" name="fullname">
@@ -133,6 +134,7 @@
                 <textarea id="about-me" name="about-me" rows="5" cols="200"></textarea>
             </div>
         </div>
+        <button class="save" onclick="">Сохранить</button>
     </div>
     <script src="createresumefunc.js"></script>
 </body>

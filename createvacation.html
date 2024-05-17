@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Созданице вакансии</title>
+    <link rel="stylesheet" href="createvacationstyles.css">
+</head>
+<body>
+    <header class="header">
+        <a class="VGTUlogo" href="#"> <img class="logo" src="img/vstu-logobezbukv.png" width="63" alt="Логотип ВГТУ"> </a>
+        <a class="palka">|</a>
+        <a href="#" class="headertext">ВОРОНЕЖСКИЙ ГОСУДАРСТВЕННЫЙ ТЕХНИЧЕСКИЙ УНИВЕРСИТЕТ</a>
+    </header>
+    
+    <nav>
+        <ul class="nav-links">
+            <div class="menuline"></div>
+            <li><a href="#" class="soisksteli">Соискатели</a></li>
+            <div class="menuline"></div>
+            <li><a href="#" class="rabotodateli">Работодатели</a></li>
+            <div class="menuline"></div>
+            <li><a href="#" class="help">Помощь</a></li>
+            <div class="menuline"></div>
+            <li><a href="LogIn.html" class="login">Вход и регистрация</a></li>
+            <div class="menuline"></div>
+         </ul>
+    </nav>
+
+<div class="vacation">
+    <div class="profile">
+        <div class="photo"><img src="img/Default-Profile-Picture-Transparent-Image.png" width="340" alt="Фото">
+        <a class="switch-photo">Изменить фото</a></div>
+        <div class="profile-details">
+            <label for="fullnamecompany">  Название компании:</label>
+            <input type="text" id="fullnamecompany" name="fullnamecompany">
+            <label for="workexpirience">Опыт работы:</label>
+            <input type="text" id="workexpirience" name="workexpirience">
+            <label for="schedule">Занятость:</label>
+            <input type="text" id="schedule" name="schedule">
+            <label for="salary">Заработная плата:</label>
+            <input type="text" id="salary" name="salary">
+        </div>
+    </div>
+    <div class="section">
+        <div class="section-title">О компании</div>
+        <div class="section-content about-company">
+            <label class="about">Введите информацию о компании</label>
+            <textarea id="about-company" name="about-company" rows="5" cols="200"></textarea>
+        </div>
+    </div>
+    <div class="section requirements">
+        <div class="section-title">Требования</div>
+        <div class="section-content requirements-section">
+            <label for="requirements">Требование:</label>
+            <input type="text" id="requirements" name="requirements">
+            <button onclick="addrequirements()">Добавить навык</button>
+            <ul id="requirements-list"></ul>
+        </div>
+    </div>
+    <div class="section skills">
+        <div class="section-title">Технические навыки</div>
+        <div class="section-content skills-section">
+            <label for="skill">Навык:</label>
+            <input type="text" id="skill" name="skill">
+            <button onclick="addSkill()">Добавить навык</button>
+            <ul id="skills-list"></ul>
+        </div>
+    </div>
+    <div class="section">
+        <div class="section-title">Условия труда</div>
+        <div class="section-content working-conditions">
+            <label class="conditions">Введите информацию о компании</label>
+            <textarea id="working conditions" name="working conditions" rows="5" cols="200"></textarea>
+        </div>
+    </div>
+
+    <button class="save" onclick="">Сохранить</button>
+
+    <script src="createvacationfunc.js"></script>
+</div>
+</body>
+</html>
