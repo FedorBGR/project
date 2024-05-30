@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Создание вакансии</title>
+    <link rel="stylesheet" href="companyregstyles.css">
+</head>
+<body>
+    <header class="header">
+        <a class="VGTUlogo" href="#"> <img class="logo" src="img/vstu-logobezbukv.png" width="63" alt="Логотип ВГТУ"> </a>
+        <a class="palka">|</a>
+        <a href="#" class="headertext">ВОРОНЕЖСКИЙ ГОСУДАРСТВЕННЫЙ ТЕХНИЧЕСКИЙ УНИВЕРСИТЕТ</a>
+    </header>
+    
+    <nav>
+        <ul class="nav-links">
+            <div class="menuline"></div>
+            <li><a href="#" class="soisksteli">Соискатели</a></li>
+            <div class="menuline"></div>
+            <li><a href="#" class="rabotodateli">Работодатели</a></li>
+            <div class="menuline"></div>
+            <li><a href="#" class="help">Помощь</a></li>
+            <div class="menuline"></div>
+            <li><a href="LogIn.html" class="login">Вход и регистрация</a></li>
+            <div class="menuline"></div>
+         </ul>
+    </nav>
+
+    <main class="main-content">
+        <h1 class="regorg">Регистрация организации</h1>
+        <div class="orgtypebutton">
+            <button class="orgbutton" onclick="showForm('ip')">ИП</button>
+            <button class="orgbutton" onclick="showForm('ooo')">ООО</button>
+            <button class="orgbutton" onclick="showForm('oao')">ОАО</button>
+            <button class="orgbutton" onclick="showForm('zao')">ЗАО</button>
+        </div>
+        <div class="photo">
+            <img src="img/Default-Profile-Picture-Transparent-Image.png" width="340" alt="Фото">
+            <a class="switch-photo">Изменить фото</a>
+        </div>
+        <form action="/submit_registration" method="post" class="registration-form">
+            <div id="ip" class="form-section active">
+                <h2>Регистрация ИП</h2>
+                <label for="ip-fullname">Полное наименование организации:</label>
+                <input type="text" id="ip-fullname" name="ip-fullname"><br>
+                <label for="ip-shortname">Краткое наименование организации:</label>
+                <input type="text" id="ip-shortname" name="ip-shortname"><br>
+                <label for="ip-postadr">Почтовый адрес:</label>
+                <input type="text" id="ip-postadr" name="ip-postadr"><br>
+                <label for="ip-receptionphone">Телефон приемной:</label>
+                <input type="text" id="ip-receptionphone" name="ip-receptionphone"><br>
+                <label for="ip-email">E-mail:</label>
+                <input type="email" id="ip-email" name="ip-email"><br>
+                <label for="ip-individualname">Индивидуальный предприниматель:</label>
+                <input type="text" id="ip-individualname" name="ip-individualname"><br>
+                <label for="ip-individualphone">Телефон ИП:</label>
+                <input type="tel" id="ip-individualphone" name="ip-individualphone"><br>
+                <label for="ip-bank">Банк:</label>
+                <input type="text" id="ip-bank" name="ip-bank"><br>
+                <label for="ip-paymentaccount">Расчетный счет:</label>
+                <input type="text" id="ip-paymentaccount" name="ip-paymentaccount"><br>
+                <label for="ip-сorrespondentaccount">Корреспондентский счет:</label>
+                <input type="text" id="ip-сorrespondentaccount" name="ip-сorrespondentaccount"><br>
+                <label for="ip-BIK">БИК:</label>
+                <input type="text" id="ip-BIK" name="ip-BIK"><br>
+                <label for="ip-taxsystem">Система налогообложения:</label>
+                <input type="text" id="ip-taxsystem" name="ip-taxsystem"><br>
+                <label for="ip-OKVED">ОКВЭД:</label>
+                <input type="text" id="ip-OKVED" name="ip-OKVED"><br>
+            </div>
+
+            <div id="ooo" class="form-section">
+                <h2>Регистрация ООО</h2>
+                <label for="ooo-name">Название организации:</label>
+                <input type="text" id="ooo-name" name="ooo-name"><br>
+                <label for="ooo-inn">ИНН:</label>
+                <input type="text" id="ooo-inn" name="ooo-inn"><br>
+                <label for="ooo-kpp">КПП:</label>
+                <input type="text" id="ooo-kpp" name="ooo-kpp"><br>
+            </div>
+
+            <div id="oao" class="form-section">
+                <h2>Регистрация ОАО</h2>
+                <label for="oao-name">Название организации:</label>
+                <input type="text" id="oao-name" name="oao-name"><br>
+                <label for="oao-inn">ИНН:</label>
+                <input type="text" id="oao-inn" name="oao-inn"><br>
+                <label for="oao-kpp">КПП:</label>
+                <input type="text" id="oao-kpp" name="oao-kpp"><br>
+                <label for="oao-reg-number">Регистрационный номер:</label>
+                <input type="text" id="oao-reg-number" name="oao-reg-number"><br>
+            </div>
+
+            <div id="zao" class="form-section">
+                <h2>Регистрация ЗАО</h2>
+                <label for="zao-name">Название организации:</label>
+                <input type="text" id="zao-name" name="zao-name"><br>
+                <label for="zao-inn">ИНН:</label>
+                <input type="text" id="zao-inn" name="zao-inn"><br>
+                <label for="zao-kpp">КПП:</label>
+                <input type="text" id="zao-kpp" name="zao-kpp"><br>
+                <label for="zao-reg-number">Регистрационный номер:</label>
+                <input type="text" id="zao-reg-number" name="zao-reg-number"><br>
+            </div>
+
+            <button class="submit" type="submit">Зарегистрироваться</button>
+        </form>
+    </main>
+
+    <script src="companyregfunc.js"></script>
+</body>
+</html>

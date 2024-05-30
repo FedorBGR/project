@@ -1,0 +1,215 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    width: fit-content;
+    box-sizing: border-box;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.VGTUlogo, .logo {
+    display: flex;
+    margin-left: 15%;
+    width: 85px;
+}
+
+.headertext {
+    position: relative;
+    overflow-wrap: break-word;
+    font-family: 'Montserrat';
+    font-weight: bold;
+    font-size: 26px;
+    letter-spacing: 0.8px;
+    color: #051C2C;
+    text-decoration: none;
+    margin-left: 10%;
+    margin-top: 3%;
+}
+
+.nav-links {
+    list-style: none;
+    background: #051C2C;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 1fr;
+    box-sizing: border-box;
+    font-size: 26px;
+}
+
+.soisksteli,
+.rabotodateli,
+.help,
+.login {
+    color: #ffffff;
+    font-family: 'Montserrat';
+    text-decoration: none;
+}
+
+.soisksteli:hover,
+.rabotodateli:hover,
+.help:hover,
+.login:hover {
+    font-weight: 500;
+}
+
+.palka {
+    margin-left: 14.5%;
+    color: #B9975B;
+    text-decoration: none;
+    font-family: 'Montserrat';
+    font-weight: 200;
+    font-size: 600%;
+    cursor: default;
+}
+
+.nav-links .menuline {
+    width: 2px;
+    height: 35px;
+    background-color: #B99F6E;
+}
+
+.main-content {
+    font-family: 'Montserrat';
+    margin: 0 auto;
+    max-width: 95%;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.regorg {
+    font-size: 25px;
+    justify-content: center;
+    margin-bottom: 20px;
+    display: flex;
+}
+
+.orgtypebutton {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.orgbutton {
+    background-color: rgba(185, 151, 91, 0.44);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 30px;
+    width: 200px;
+    margin: 10px;
+}
+
+.orgbutton:hover {
+    background-color: #B9975B;
+}
+
+.photo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.switch-photo {
+    margin-top: 10px;
+    color: #051C2C;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.registration-form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.form-section {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-section.active {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    margin-left: 15%;
+    display: flex;
+    justify-content: center;
+    align-self: flex-start;
+    margin-bottom: 5px;
+    font-size: 25px;
+    flex-direction: column;
+}
+
+input {
+    margin-left: 15%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-self: flex-start;
+    padding: 10px;
+    align-items: center;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 25px;
+    width: 70%;
+}
+
+.submit {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 45%;
+    margin-top: 30px;
+    height: 50px;
+    width: 300px;
+    font-size: 25px;
+    font-family: 'Montserrat';
+    background-color: #051C2C;
+    color: #B9975B;
+    transition: 0.2s;
+    cursor: pointer;
+    outline: none;
+    font-weight: 400;
+    border-radius: 10px;
+}
+
+.submit:focus {
+    outline: none;
+}
+
+.submit:hover {
+    font-family: 'Montserrat';
+    background-color: #051C2C;
+    transform: scale(105%);
+    font-weight: 500;
+}
+
+.submit:active {
+    transform: scale(0.9);
+    background-color: rgba(5, 28, 44, 0.7);
+}
+
+h2{
+    display: flex;
+    justify-content: center;
+}
